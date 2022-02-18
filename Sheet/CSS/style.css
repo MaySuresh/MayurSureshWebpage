@@ -1,0 +1,192 @@
+/* this resets eveything so it for clarity
+*{
+    margin:0;
+    padding:0;
+}
+*/
+
+body{
+    background-color: #f4f4f4; /* web page color*/
+    color:#555555;
+    font: normal 16px Tahoma, Geneva, Verdana, sans-serif; /* written font*/
+
+    line-height:2em;/*Space between lines*/
+    margin:0; /*right spacing and left spacing*/
+}
+
+.container{
+    width:80%; /* box size on web page*/
+    margin:auto; /* makes all sides of the box^ the same*/
+}
+.button{
+    background-color: aquamarine;
+    color:#333;
+    padding: 10px 15px;
+    border:none;
+    width:auto;
+}
+.button:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.clr{
+    clear: both;
+}
+
+.box-1{
+    background-color: rgb(66, 45, 45); /* box color*/
+    color:#fff;
+    border: 10px  red solid; /* border size color*/
+    border-width:3px ;
+    border-bottom-width:10px ;
+    border-top-width: 15px;
+   /*  border-top-style: dotted;
+   border: 10px red solid; /*  resets everything*/
+
+    padding-top:20px; /* puts specified space in the beginning of the <div>*/
+    padding-bottom: 20px;
+    padding:20px;/* puts specified space all 4 directions of the <div>*/
+
+    margin-top:20px;
+
+    margin:20px 0; /* puts 20px on top and bottom and then 0 on left & right*/
+
+}
+
+.box-1 h1{ /* only does under h1 and nothing else*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 0.5em;
+
+
+}
+.box-2{
+    border: 3px dotted #ccc;
+    padding: 25px;
+    margin:20px 0;    
+}
+
+a{
+   text-decoration: none; 
+   color: black;
+}
+a:hover{
+    color:chartreuse;
+
+}
+
+a:active{
+    color:blue;
+}
+a:visited{
+   
+}
+.categories{
+    border:1px #ccc solid;
+    padding:10px;
+    border-radius: 20px;
+
+}
+
+.categories h2{
+    text-align: center;
+}
+.categories ul{
+    padding:0;
+    padding-left: 20px;
+    list-style: none;
+}
+.categories li{
+    padding-bottom:6px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url('../images/check1.png');
+}
+
+.my-form{
+    padding: 20px;
+
+}
+.my-form .form-group{/*The space in between the names email and message*/
+    padding-bottom: 15px;
+ 
+}
+
+.my-form label{
+    display:block;
+}
+.my-form input[type ="text"],.my-form textarea{ /*name,Email,Message text box adjust*/
+    padding: 8px;
+    width:400px;
+}
+
+
+.block{
+    float: left;
+    width: 33.3%;
+    border:1px dotted black ;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block{ /*# cuz of id*/
+    float: left;
+    width:70%;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width:30%;
+    background-color: blue;
+    color: red;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.p-box{
+    color:white;
+    width:640px;
+    height: 1035px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image:url('../images/Saraswati.jpg');
+    background-repeat: no-repeat;
+    background-position:100px 200px;
+    background-position: center center ;
+}
+
+.p-box h1{
+    position: absolute; /*since it absolute it doenst do top 40 in the box but in the whole page*/
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right:100px;
+}
+
+.fix-me{
+    position: fixed;
+    top:400px;
+}
+.my-list li:first-child{
+    background: red;
+}
+
+.my-list li:last-child{
+    background:blue;
+}
+.my-list li:nth-child(5){
+    background: greenyellow;
+
+}
+.my-list li:nth-child(even){ background:grey ;
+
+}
